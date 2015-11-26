@@ -9,7 +9,7 @@ git clone https://github.com/Pandazaur/cordova-plugin-android-mediascanner.git
 
 Then go in your project folder and type:
 ```shell
-cordova plugin add /path/to/cordova-plugin-anroid-mediascanner
+cordova plugin add /path/to/cordova-plugin-android-mediascanner
 ```
 
 ## Usage
