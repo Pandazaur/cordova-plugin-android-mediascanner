@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.pandazaur.mediascanner"
+    version="0.0.1">
+    <name>MediaScanner</name>
+    <description>Android Media Scanner</description>
+    <license>Apache 2.0</license>
+    <keywords>media,scanner,android</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/MediaScanner.js" name="MediaScanner">
+        <clobbers target="MediaScanner" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MediaScanner" >
+                <param name="android-package" value="MediaScanner"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/MediaScanner.java" target-dir="src/" />
+    </platform>
+
+</plugin>
